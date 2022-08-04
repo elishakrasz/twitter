@@ -14,20 +14,12 @@ import SidebarRow from './SidebarRow'
 
 const Sidebar = () => {
     return (
-        <div className='flex flex-col'>
+        <div className='flex flex-col col-span-2 items-center px-4 md:items-start'>
             <img
                 src="https://links.papareact.com/drq"
-                // width={40}
-                // height={40}
                 alt="twitter icon"
-                className='h-10 w-10'
+                className='m-3 h-10 w-10'
             />
-            {/* <Image
-                src="https://links.papareact.com/drq"
-                width={40}
-                height={40}
-                alt="twitter icon"
-            /> */}
             <SidebarRow Icon={HomeIcon} title="Home" />
             <SidebarRow Icon={HashtagIcon} title="Explore" />
             <SidebarRow Icon={BellIcon} title="Notifications" />
